@@ -1,0 +1,159 @@
+@media print {
+    @page {
+        margin: 1.5cm 1cm;
+        size: A4;
+    }
+
+    body {
+        background-color: white !important;
+        color: #2d3748 !important;
+        font-size: 11pt;
+        line-height: 1.4;
+        font-family: Arial, sans-serif;
+    }
+
+    .max-w-5xl {
+        max-width: none;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .rounded-24px {
+        border-radius: 0;
+        box-shadow: none !important;
+    }
+
+    .bg-dark-card,
+    .bg-light-card {
+        background-color: white !important;
+        padding: 0 !important;
+    }
+
+    .text-dark-text,
+    .text-light-text {
+        color: #2d3748 !important;
+    }
+
+    .text-accent-yellow {
+        color: #FF813F !important;
+    }
+
+    .bg-accent-yellow {
+        background-color: #FF813F !important;
+        color: white !important;
+    }
+
+    h1 {
+        font-size: 20pt !important;
+        color: #FF813F !important;
+        margin-bottom: 0.5cm !important;
+    }
+
+    h2 {
+        font-size: 16pt !important;
+        color: #FF813F !important;
+        margin-top: 0.5cm !important;
+        margin-bottom: 0.3cm !important;
+    }
+
+    h3 {
+        font-size: 13pt !important;
+        margin-top: 0.3cm !important;
+        margin-bottom: 0.2cm !important;
+    }
+
+    p,
+    li {
+        font-size: 11pt !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.2cm !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: #2d3748 !important;
+    }
+
+    a[href]::after {
+        content: none !important;
+    }
+
+    .print-hidden,
+    header,
+    nav,
+    .flex.space-x-4,
+    button,
+    .download-button {
+        display: none !important;
+    }
+
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 0.5cm !important;
+    }
+
+    ul,
+    ol {
+        padding-left: 0.5cm !important;
+        margin-bottom: 0.3cm !important;
+    }
+
+    li {
+        page-break-inside: avoid;
+    }
+
+    .grid {
+        display: block !important;
+    }
+
+    .flex {
+        display: block !important;
+    }
+
+    .pt-8,
+    .py-8,
+    .p-8 {
+        padding: 0 !important;
+    }
+
+    .mt-4,
+    .my-4,
+    .m-4 {
+        margin: 0.2cm 0 !important;
+    }
+
+    .skills-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.3cm !important;
+    }
+
+    .skill-item {
+        page-break-inside: avoid;
+        margin-bottom: 0.2cm !important;
+    }
+
+    .experience-item {
+        page-break-inside: avoid;
+        margin-bottom: 0.4cm !important;
+    }
+
+    .experience-date {
+        color: #666 !important;
+        font-size: 10pt !important;
+    }
+
+    .education-item {
+        page-break-inside: avoid;
+        margin-bottom: 0.3cm !important;
+    }
+
+    .contact-info {
+        margin-bottom: 0.4cm !important;
+    }
+
+    .contact-item {
+        display: inline-block !important;
+        margin-right: 1cm !important;
+    }
+}

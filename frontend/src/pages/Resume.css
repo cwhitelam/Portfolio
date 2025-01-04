@@ -1,0 +1,96 @@
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+        font-size: 10pt;
+    }
+
+    .max-w-5xl {
+        max-width: none;
+    }
+
+    .rounded-\[24px\] {
+        border-radius: 0;
+    }
+
+    .shadow-lg {
+        box-shadow: none;
+    }
+
+    .bg-dark-card, .bg-light-card {
+        background-color: white;
+    }
+
+    .text-dark-text, .text-light-text {
+        color: black;
+    }
+
+    .text-accent-yellow {
+        color: #000;
+    }
+
+    .bg-accent-yellow {
+        background-color: #FFD700;
+        color: #000;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .print\:hidden,
+    header,
+    .flex.space-x-4 {
+        display: none !important;
+    }
+
+    /* Adjust font sizes for print */
+    h1 { font-size: 18pt; }
+    h2 { font-size: 14pt; }
+    h3 { font-size: 12pt; }
+    p, li { font-size: 10pt; }
+
+    /* Remove page header */
+    @page {
+        size: auto;
+        margin: 0mm;
+    }
+
+    /* Add page breaks where necessary */
+    section {
+        page-break-inside: avoid;
+    }
+
+    /* Adjust layout for print */
+    .pt-8 {
+        padding-top: 0.5cm;
+    }
+
+    .p-8 {
+        padding: 0.5cm;
+    }
+
+    .mb-8 {
+        margin-bottom: 0.5cm;
+    }
+
+    .mb-4 {
+        margin-bottom: 0.25cm;
+    }
+
+    /* Adjust skill tags for print */
+    .flex.flex-wrap.gap-4 span {
+        border: 1px solid black;
+        padding: 2px 6px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
+        border-radius: 0;
+    }
+}
+

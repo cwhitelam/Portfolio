@@ -1,0 +1,12 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "cd frontend && npm install && npm run build"
+
+[deploy]
+startCommand = "cd backend && dotnet run"
+healthcheckPath = "/health"
+restartPolicyType = "ON_FAILURE"
+numReplicas = 1
+
+[deploy.envs]
+ASPNETCORE_ENVIRONMENT = "Production" 
